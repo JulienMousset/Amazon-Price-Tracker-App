@@ -1,6 +1,6 @@
 # Amazon-Price-Tracker-App
 
-A Python app that tracks an Amazon product and send you an e-mail when it price falls down.\
+A Python app that tracks an Amazon product and send you an e-mail when it price falls down.
 
 It uses some basic web scraping and e-mail sending knowledges.
 
@@ -37,3 +37,5 @@ _First line is the sender e-mail address, second one is the recipient e-mail adr
 ## Executing
 
 Execute the program this way : `python scraper.py`
+
+Don't hesitate to experiment with it and have fun !
