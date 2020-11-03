@@ -4,12 +4,14 @@ A Python app that tracks an Amazon product and send you an e-mail when it price 
 
 It uses some basic web scraping and e-mail sending knowledges.
 
+In this case, we are checking for when the Oculus Rift S is gonna be priced lower that 400€ on Amazon.
+
 ## How to use
 
 If you wish to use this app :
 - Add the url for the product you wish to track here : `URL = 'https://amzn.to/3jV41Tc'`
 
-_It doesn't have to be an Amazon product, but the program might not work with other websites depending on the id values they use for the name and price of their products. So feel free to change the `title` and `price` variables values to match the id used on the website of your choice._
+_It doesn't have to be an Amazon product, but the program might not work with other websites depending on the id values they use for the name and price of their products. So feel free to change the `title` and `price` variables values to match the id used on the website of your choice. Also don't forget to change the price treshold for the one that you want in the if condition : `if(converted_price < 400):`_
 
 
 - Replace my user agent with yours here : `headers = {"User-Agent": 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:82.0) Gecko/20100101 Firefox/82.0'}`
