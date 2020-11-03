@@ -4,7 +4,9 @@ import smtplib
 import time
 
 URL = 'https://amzn.to/3jV41Tc'
-headers = {"User-Agent": 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:82.0) Gecko/20100101 Firefox/82.0'}
+headers = {"User-Agent": 'Mozilla/5.0 (X11; Ubuntu;'
+           'Linux x86_64; rv:82.0) Gecko/20100101 Firefox/82.0'}
+
 
 def check_price():
     page = requests.get(URL, headers=headers)
@@ -15,8 +17,9 @@ def check_price():
 
     print(title.strip() + ': ')
     print(converted_price)
-    if(converted_price < 400.0):
+    if(converted_price < 400):
         send_mail()
+
 
 def send_mail():
     server = smtplib.SMTP('smtp.gmail.com', 587)
@@ -37,6 +40,8 @@ def send_mail():
     print('AN EMAIL HAS BEEN SENT!')
     server.quit()
 
+
 while(True):
+
     check_price()
     time.sleep(86400)
