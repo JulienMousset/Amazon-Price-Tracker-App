@@ -6,6 +6,11 @@ It uses some basic web scraping and e-mail sending knowledges.
 
 In this case, we are checking for when the Oculus Rift S is gonna be priced lower that 400€ on Amazon.
 
+## Requirements
+
+- Python3+ (https://www.python.org/downloads/)
+- Install required Python packages : `pip install -r requirements.txt`
+
 ## How to use
 
 If you wish to use this app :
